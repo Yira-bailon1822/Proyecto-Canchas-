@@ -1,6 +1,9 @@
 # Proyecto-Canchas-
 Este proyecto consiste en una API REST modular desarrollada para gestionar canchas deportivas y reservas de turnos.
 ARQUITECTURA DEL PROYECTO 
+
+
+
 reserva_canchas/
 ├── app/
 │   ├── crud/               
