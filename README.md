@@ -4,30 +4,20 @@ ARQUITECTURA DEL PROYECTO
 
 
 
-reserva_canchas/
+sistema_reservas/
 ├── app/
-│   ├── crud/               
-│   │   ├── cancha.py
-│   │   └── __init__.py
-│   ├── models/            
-│   │   ├── cancha.py
-│   │   ├── reserva.py
-│   │   └── __init__.py
-│   ├── routers/            
-│   │   ├── cancha.py
-│   │   └── __init__.py
-│   ├── schemas/            
-│   │   ├── cancha.py
-│   │   ├── reserva.py
-│   │   └── __init__.py
-│   ├── config.py           
-│   ├── database.py         
-│   ├── main.py             
-│   └── __init__.py
-├── .env                    # Variables de entorno locales
-├── Dockerfile              # Instrucciones para la construcción de la imagen de la API
-├── docker-compose.yml      # Orquestación de contenedores (API + PostgreSQL)
-└── requirements.txt        # Dependencias del proyecto Python
+│   ├── models/          # Modelos de base de datos (SQLAlchemy)
+│   ├── schemas/         # Esquemas de entrada/salida (Pydantic)
+│   ├── crud/            # Lógica de acceso a datos y reglas de negocio
+│   ├── routers/         # Controladores de endpoints
+│   ├── config.py        # Configuración de variables de entorno
+│   ├── database.py      # Conexión y sesión de Base de Datos
+│   ├── exceptions.py    # Manejo centralizado de excepciones
+│   └── main.py          # Punto de entrada de FastAPI
+├── Dockerfile           # Configuración del contenedor de la API
+├── docker-compose.yml   # Orquestación de servicios (API + PostgreSQL)
+├── requirements.txt     # Dependencias del proyecto
+└── .env                 # Variables de entorno
 
 //Mnaual de uso 
 Requisistos de instalación 
